@@ -1,0 +1,155 @@
+footer {
+  padding: 1.875rem;
+  margin: 3.75rem 4% 4.75rem 4%;
+}
+
+footer .top-segustions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+footer .top-segustions a {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+footer .top-segustions a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer .top-segustions a div,
+footer .top-segustions a p {
+  position: absolute;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.5s;
+  transition: opacity 0.3s, -webkit-transform 0.5s;
+  transition: opacity 0.3s, transform 0.5s;
+  transition: opacity 0.3s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+footer .top-segustions a div {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+}
+
+footer .top-segustions a p {
+  font-weight: normal;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  opacity: 0;
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+}
+
+footer .top-segustions a:hover div {
+  opacity: 0.5;
+}
+
+footer .top-segustions a:hover p {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+footer .top-segustions .wide {
+  grid-column: span 2;
+}
+
+footer .media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2.125rem;
+}
+
+footer .media p {
+  color: #757575;
+  margin: 0;
+}
+
+footer .media div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .media div a {
+  margin-left: 2.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  footer .top-segustions a {
+    height: 300px;
+  }
+  footer .media p {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  footer .media div a img {
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  footer {
+    padding: 0;
+    margin: 0;
+  }
+  footer .top-segustions {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  footer .top-segustions a {
+    height: 300px;
+  }
+  footer .media {
+    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 3.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .media p {
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+  footer .media div a {
+    margin-left: 1.5rem;
+  }
+  footer .media div a img {
+    height: 22px;
+  }
+  footer .media div a:first-child {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,57 @@
+@import "./variables";
+@import "./header";
+@import "./main";
+@import "./footer";
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+button {
+    font-family: $primaryFontFamily;
+    font-size: $primaryFontSize;
+}
+
+body,
+h1,
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $bodyBackgroundColor;
+    color: $textAndLinkColor;
+}
+
+h1 {
+    font-family: $secondaryFontFamily;
+    font-size: $h1FontSize;
+}
+
+p {
+    font-weight: $paragraphFontWeight;
+    line-height: $paragraphLineHeight;
+}
+
+a {
+    display: inline-block;
+    color: $textAndLinkColor;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+@media only screen and (max-width: 1200px) {
+    body,
+    button {
+        font-size: $primFontSizeOnMedium;
+    }
+
+    h1 {
+        font-size: $h1FontSizeOnMedium;
+    }
+}

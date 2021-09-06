@@ -1,0 +1,120 @@
+main .anime-section,
+main .manga-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .anime-section .section-image,
+main .manga-section .section-image {
+  width: 50%;
+  height: 575px;
+  overflow: hidden;
+}
+
+main .anime-section .section-image img,
+main .manga-section .section-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .anime-section .section-text,
+main .manga-section .section-text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .anime-section .section-text div,
+main .manga-section .section-text div {
+  padding: 0 1.875rem;
+  margin: 0 8%;
+}
+
+main .anime-section .section-text div h1,
+main .manga-section .section-text div h1 {
+  font-weight: normal;
+}
+
+main .anime-section .section-text div p,
+main .manga-section .section-text div p {
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+}
+
+main .anime-section .section-image {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 83% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 83% 100%, 0% 100%);
+}
+
+main .manga-section .section-image {
+  -webkit-clip-path: polygon(17% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(17% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+main .manga-section .section-text div p {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  main .anime-section .section-image,
+  main .manga-section .section-image {
+    width: 45%;
+    height: 450px;
+  }
+  main .anime-section .section-text,
+  main .manga-section .section-text {
+    width: 55%;
+  }
+  main .anime-section .section-image {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 87% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 87% 100%, 0% 100%);
+  }
+  main .manga-section .section-image {
+    -webkit-clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main .anime-section .section-image,
+  main .manga-section .section-image {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    height: 300px;
+    background-position: center center;
+  }
+  main .anime-section .section-text,
+  main .manga-section .section-text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+  main .anime-section .section-text div,
+  main .manga-section .section-text div {
+    padding: 0 2rem;
+    margin: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  main .anime-section .section-image {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+  main .manga-section .section-image {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
