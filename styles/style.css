@@ -17,11 +17,11 @@ header nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0 1.875rem;
   margin: 0 4%;
 }
@@ -36,8 +36,8 @@ header nav ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header nav ul .go-back-icon {
@@ -64,11 +64,11 @@ header nav ul .sign-in-up {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -88,7 +88,7 @@ header .slider {
   height: 100%;
   overflow: hidden;
   -webkit-filter: url(#liquify);
-          filter: url(#liquify);
+  filter: url(#liquify);
   z-index: 0;
 }
 
@@ -96,7 +96,7 @@ header .slider img {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 100%;
   opacity: 0;
 }
@@ -123,7 +123,7 @@ header .description {
   top: 48%;
   left: 47%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 37rem;
 }
 
@@ -231,11 +231,11 @@ header .slider-controls div:last-child:hover svg {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
@@ -280,12 +280,12 @@ header .slider-controls div:last-child:hover svg {
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     background-color: #fff;
     padding: 2.5rem 0;
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
@@ -346,7 +346,7 @@ header .slider-controls div:last-child:hover svg {
     bottom: 2rem;
     width: 100%;
     -webkit-transform: translate(0, 2rem);
-            transform: translate(0, 2rem);
+    transform: translate(0, 2rem);
   }
   header .slider .tanjiro {
     padding: 0;
@@ -365,7 +365,7 @@ header .slider-controls div:last-child:hover svg {
   header .description {
     width: 100%;
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     padding: 2rem;
     margin-bottom: 2rem;
   }
@@ -503,7 +503,7 @@ main .manga-section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 main .anime-section .section-image,
@@ -518,7 +518,7 @@ main .manga-section .section-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 main .anime-section .section-text,
@@ -528,8 +528,8 @@ main .manga-section .section-text {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 main .anime-section .section-text div,
@@ -551,12 +551,12 @@ main .manga-section .section-text div p {
 
 main .anime-section .section-image {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 83% 100%, 0% 100%);
-          clip-path: polygon(0% 0%, 100% 0%, 83% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 83% 100%, 0% 100%);
 }
 
 main .manga-section .section-image {
   -webkit-clip-path: polygon(17% 0%, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(17% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(17% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 main .manga-section .section-text div p {
@@ -575,11 +575,11 @@ main .manga-section .section-text div p {
   }
   main .anime-section .section-image {
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 87% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 100% 0%, 87% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 87% 100%, 0% 100%);
   }
   main .manga-section .section-image {
     -webkit-clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(13% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 
@@ -587,8 +587,8 @@ main .manga-section .section-text div p {
   main .anime-section .section-image,
   main .manga-section .section-image {
     -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    -ms-flex-order: 1;
+    order: 1;
     width: 100%;
     height: 300px;
     background-position: center center;
@@ -596,8 +596,8 @@ main .manga-section .section-text div p {
   main .anime-section .section-text,
   main .manga-section .section-text {
     -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    -ms-flex-order: 2;
+    order: 2;
     width: 100%;
   }
   main .anime-section .section-text div,
@@ -609,11 +609,11 @@ main .manga-section .section-text div p {
   }
   main .anime-section .section-image {
     -webkit-clip-path: none;
-            clip-path: none;
+    clip-path: none;
   }
   main .manga-section .section-image {
     -webkit-clip-path: none;
-            clip-path: none;
+    clip-path: none;
   }
 }
 
@@ -622,15 +622,15 @@ footer {
   margin: 3.75rem 4% 4.75rem 4%;
 }
 
-footer .top-segustions {
+footer .top-suggestions {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr) [4];
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
-footer .top-segustions a {
+footer .top-suggestions a {
   position: relative;
   width: 100%;
   height: 400px;
@@ -639,15 +639,15 @@ footer .top-segustions a {
   background-repeat: no-repeat;
 }
 
-footer .top-segustions a img {
+footer .top-suggestions a img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
-footer .top-segustions a div,
-footer .top-segustions a p {
+footer .top-suggestions a div,
+footer .top-suggestions a p {
   position: absolute;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.5s;
   transition: opacity 0.3s, -webkit-transform 0.5s;
@@ -655,7 +655,7 @@ footer .top-segustions a p {
   transition: opacity 0.3s, transform 0.5s, -webkit-transform 0.5s;
 }
 
-footer .top-segustions a div {
+footer .top-suggestions a div {
   top: 0;
   left: 0;
   width: 100%;
@@ -664,7 +664,7 @@ footer .top-segustions a div {
   opacity: 0;
 }
 
-footer .top-segustions a p {
+footer .top-suggestions a p {
   font-weight: normal;
   bottom: 0;
   left: 0;
@@ -674,20 +674,20 @@ footer .top-segustions a p {
   margin: 0;
   opacity: 0;
   -webkit-transform: translateY(2rem);
-          transform: translateY(2rem);
+  transform: translateY(2rem);
 }
 
-footer .top-segustions a:hover div {
+footer .top-suggestions a:hover div {
   opacity: 0.5;
 }
 
-footer .top-segustions a:hover p {
+footer .top-suggestions a:hover p {
   opacity: 1;
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
-footer .top-segustions .wide {
+footer .top-suggestions .wide {
   grid-column: span 2;
 }
 
@@ -696,13 +696,13 @@ footer .media {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 2.125rem;
 }
 
@@ -722,7 +722,7 @@ footer .media div a {
 }
 
 @media only screen and (max-width: 1200px) {
-  footer .top-segustions a {
+  footer .top-suggestions a {
     height: 300px;
   }
   footer .media p {
@@ -739,11 +739,11 @@ footer .media div a {
     padding: 0;
     margin: 0;
   }
-  footer .top-segustions {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+  footer .top-suggestions {
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
   }
-  footer .top-segustions a {
+  footer .top-suggestions a {
     height: 300px;
   }
   footer .media {
@@ -751,8 +751,8 @@ footer .media div a {
     padding-top: 1rem;
     padding-bottom: 3.5rem;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   footer .media p {
     text-align: center;
@@ -774,7 +774,7 @@ footer .media div a {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body,

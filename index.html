@@ -1,210 +1,254 @@
 <!DOCTYPE html>
 <html>
-    <head lang="en">
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles/style.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
-        <title>Anime</title>
-    </head>
-    <body>
-        <header>
-            <div class="small-screen-nav">
-                <a class="anime-logo" href="#">A<span style="opacity: 0.5">nime</span></a>
-                <div class="menu-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 56">
-                        <rect width="84" height="14" rx="7" />
-                        <rect y="21" width="84" height="14" rx="7" />
-                        <rect y="42" width="84" height="14" rx="7" />
-                    </svg>
-                </div>
-            </div>
-            <nav>
-                <a class="anime-logo" href="#">A<span style="opacity: 0.5">nime</span></a>
-                <ul>
-                    <div class="go-back-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 53.8">
-                            <rect y="19.9" width="84" height="14" rx="7" />
-                            <rect x="100" y="11" width="42" height="14" rx="7" transform="translate(-81.29 89.73) rotate(-45)" />
-                            <rect x="113.9" y="17" width="14" height="42" rx="7" transform="translate(-95.46 95.52) rotate(-45)" />
-                        </svg>
-                    </div>
-                    <li><a href="#">Home</a></li>
-                    <li><a class="light-opacity" href="#">Manga</a></li>
-                    <li><a class="light-opacity" href="#">Anime</a></li>
-                    <li>
-                        <a class="sign-in-up" href="#">
-                            <div>
-                                <p>Sign</p>
-                                <p>in/up</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>Anime</title>
+  </head>
+  <body>
+    <header>
+      <div class="small-screen-nav">
+        <a class="anime-logo" href="#"
+          >A<span style="opacity: 0.5">nime</span></a
+        >
+        <div class="menu-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 56">
+            <rect width="84" height="14" rx="7" />
+            <rect y="21" width="84" height="14" rx="7" />
+            <rect y="42" width="84" height="14" rx="7" />
+          </svg>
+        </div>
+      </div>
+      <nav>
+        <a class="anime-logo" href="#"
+          >A<span style="opacity: 0.5">nime</span></a
+        >
+        <ul>
+          <div class="go-back-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 53.8">
+              <rect y="19.9" width="84" height="14" rx="7" />
+              <rect
+                x="100"
+                y="11"
+                width="42"
+                height="14"
+                rx="7"
+                transform="translate(-81.29 89.73) rotate(-45)"
+              />
+              <rect
+                x="113.9"
+                y="17"
+                width="14"
+                height="42"
+                rx="7"
+                transform="translate(-95.46 95.52) rotate(-45)"
+              />
+            </svg>
+          </div>
+          <li><a href="#">Home</a></li>
+          <li><a class="light-opacity" href="#">Manga</a></li>
+          <li><a class="light-opacity" href="#">Anime</a></li>
+          <li>
+            <a class="sign-in-up" href="#">
+              <div>
+                <p>Sign</p>
+                <p>in/up</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
-            <svg id="svg-animation" width="0" height="0">
-                <filter id="liquify">
-                    <feTurbulence
-                        type="turbulence"
-                        baseFrequency="0.008 0.05"
-                        numOctaves="2"
-                        seed="3"
-                        stitchTiles="stitch"
-                        result="turbulence"
-                    />
-                    <feColorMatrix type="saturate" values="10" in="turbulence" result="colormatrix" />
-                    <feColorMatrix
-                        id="colorMatrix"
-                        type="matrix"
-                        values="1 0 0 0 0
+      <svg id="svg-animation" width="0" height="0">
+        <filter id="liquify">
+          <feTurbulence
+            type="turbulence"
+            baseFrequency="0.008 0.05"
+            numOctaves="2"
+            seed="3"
+            stitchTiles="stitch"
+            result="turbulence"
+          />
+          <feColorMatrix
+            type="saturate"
+            values="10"
+            in="turbulence"
+            result="colormatrix"
+          />
+          <feColorMatrix
+            id="colorMatrix"
+            type="matrix"
+            values="1 0 0 0 0
                                 0 1 0 0 0
                                 0 0 1 0 0
                                 0 0 0 0 -20"
-                        in="colormatrix"
-                        result="colormatrix1"
-                    />
-                    <feDisplacementMap in="SourceGraphic" in2="colormatrix1" scale="15" xChannelSelector="A" yChannelSelector="R" />
-                </filter>
-            </svg>
+            in="colormatrix"
+            result="colormatrix1"
+          />
+          <feDisplacementMap
+            in="SourceGraphic"
+            in2="colormatrix1"
+            scale="15"
+            xChannelSelector="A"
+            yChannelSelector="R"
+          />
+        </filter>
+      </svg>
 
-            <div class="slider">
-                <img class="tanjiro" src="./assets/tanjiro.png" />
-                <img class="nezuko" src="./assets/nezuko.png" />
-                <img class="zenitsu" src="./assets/zenitsu.png" />
-                <img class="inosuke" src="./assets/inosuke.png" />
-            </div>
-            <div class="description">
-                <h1>Demon Slayer</h1>
-                <p>
-                    Orci varius natoque penatibus et dis parturient montes, nascetur ridiculus mus. Donec nunc ullamcorper tempor nec id
-                    sapien.
-                </p>
-                <button>Go To Page</button>
-            </div>
-            <div class="slider-controls">
-                <div id="slider-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.59 35">
-                        <path
-                            d="M359.77,25.11,384.29,11a3.34,3.34,0,0,1,5,2.89V42.16a3.34,3.34,0,0,1-5,2.89L359.77,30.89A3.33,3.33,0,0,1,359.77,25.11Z"
-                            transform="translate(-338.7 -10.5)"
-                        />
-                        <path
-                            d="M340.37,25.11,364.89,11a3.34,3.34,0,0,1,5,2.89V42.16a3.34,3.34,0,0,1-5,2.89L340.37,30.89A3.34,3.34,0,0,1,340.37,25.11Z"
-                            transform="translate(-338.7 -10.5)"
-                        />
-                    </svg>
-                </div>
-                <div id="slider-stop">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 35">
-                        <rect class="cls-1" width="10" height="35" rx="5" />
-                        <rect class="cls-1" x="16" width="10" height="35" rx="5" />
-                    </svg>
-                </div>
-                <div id="slider-play">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.2 35">
-                        <path
-                            d="M41.93,25.11,17.41,11a3.34,3.34,0,0,0-5,2.89V42.16a3.34,3.34,0,0,0,5,2.89L41.93,30.89A3.34,3.34,0,0,0,41.93,25.11Z"
-                            transform="translate(-12.4 -10.5)"
-                        />
-                    </svg>
-                </div>
-                <div id="slider-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.59 35">
-                        <path
-                            d="M220.23,25.11,195.71,11a3.34,3.34,0,0,0-5,2.89V42.16a3.34,3.34,0,0,0,5,2.89l24.52-14.16A3.33,3.33,0,0,0,220.23,25.11Z"
-                            transform="translate(-190.7 -10.5)"
-                        />
-                        <path
-                            d="M239.63,25.11,215.11,11a3.34,3.34,0,0,0-5,2.89V42.16a3.34,3.34,0,0,0,5,2.89l24.52-14.16A3.34,3.34,0,0,0,239.63,25.11Z"
-                            transform="translate(-190.7 -10.5)"
-                        />
-                    </svg>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="anime-section">
-                <div class="section-image">
-                    <img src="./assets/your-name.jpg" alt="Your Name" />
-                </div>
-                <div class="section-text">
-                    <div>
-                        <h1>Anime</h1>
-                        <p>
-                            Aenean eget nulla in arcu faucibus fringilla a ut nibh. Praesent vehicula metus in eros commodo, ut fermentum
-                            nisi fermentum. Suspendisse pulvinar arcu sodales fringilla dictum.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="manga-section">
-                <div class="section-text">
-                    <div>
-                        <h1>Manga</h1>
-                        <p>
-                            Sed dignissim malesuada iaculis. Integer turpis leo, mollis pretium venenatis id, hendrerit in augue. Aliquam
-                            est lacus, lobortis in lectus ac, sagittis egestas lacus. In sit amet mauris sodales, faucibus augue quis,
-                            rhoncus libero. Etiam in maximus urna, eget consequat sem.
-                        </p>
-                    </div>
-                </div>
-                <div class="section-image">
-                    <img src="./assets/manga.jpg" alt="Manga" />
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="top-segustions">
-                <a href="#" class="wide">
-                    <img src="./assets/haikyu.jpg" alt="Haikyu" />
-                    <div></div>
-                    <p>HaiKyu!!</p>
-                </a>
-                <a href="#">
-                    <img src="./assets/my-hero-academia.jpg" alt="My Hero Academia" />
-                    <div></div>
-                    <p>My Hero Academia</p>
-                </a>
-                <a href="#">
-                    <img src="./assets/attack-on-titan.jpg" alt="Attack On Titan" />
-                    <div></div>
-                    <p>Attack On Titan</p>
-                </a>
-                <a href="#">
-                    <img src="./assets/fire-force.jpg" alt="Fire Force" />
-                    <div></div>
-                    <p>Fire Force</p>
-                </a>
-                <a href="#">
-                    <img src="./assets/beyond-the-boundary.jpg" alt="Beyond The Boundary" />
-                    <div></div>
-                    <p>Beyond The Boundary</p>
-                </a>
-                <a href="#" class="wide">
-                    <img src="./assets/one-punch-man.jpg" alt="One Punch Man" />
-                    <div></div>
-                    <p>One Punch Man</p>
-                </a>
-            </div>
-            <div class="media">
-                <p>Designed and developed by m0hammadr3za</p>
-                <div>
-                    <a href="#">
-                        <img src="./assets/twitter.svg" />
-                    </a>
-                    <a href="#">
-                        <img src="./assets/youtube.svg" />
-                    </a>
-                    <a href="#">
-                        <img src="./assets/facebook.svg" />
-                    </a>
-                </div>
-            </div>
-        </footer>
+      <div class="slider">
+        <img class="tanjiro" src="./assets/tanjiro.png" />
+        <img class="nezuko" src="./assets/nezuko.png" />
+        <img class="zenitsu" src="./assets/zenitsu.png" />
+        <img class="inosuke" src="./assets/inosuke.png" />
+      </div>
+      <div class="description">
+        <h1>Demon Slayer</h1>
+        <p>
+          Orci varius natoque penatibus et dis parturient montes, nascetur
+          ridiculus mus. Donec nunc ullamcorper tempor nec id sapien.
+        </p>
+        <button>Go To Page</button>
+      </div>
+      <div class="slider-controls">
+        <div id="slider-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.59 35">
+            <path
+              d="M359.77,25.11,384.29,11a3.34,3.34,0,0,1,5,2.89V42.16a3.34,3.34,0,0,1-5,2.89L359.77,30.89A3.33,3.33,0,0,1,359.77,25.11Z"
+              transform="translate(-338.7 -10.5)"
+            />
+            <path
+              d="M340.37,25.11,364.89,11a3.34,3.34,0,0,1,5,2.89V42.16a3.34,3.34,0,0,1-5,2.89L340.37,30.89A3.34,3.34,0,0,1,340.37,25.11Z"
+              transform="translate(-338.7 -10.5)"
+            />
+          </svg>
+        </div>
+        <div id="slider-stop">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 35">
+            <rect class="cls-1" width="10" height="35" rx="5" />
+            <rect class="cls-1" x="16" width="10" height="35" rx="5" />
+          </svg>
+        </div>
+        <div id="slider-play">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.2 35">
+            <path
+              d="M41.93,25.11,17.41,11a3.34,3.34,0,0,0-5,2.89V42.16a3.34,3.34,0,0,0,5,2.89L41.93,30.89A3.34,3.34,0,0,0,41.93,25.11Z"
+              transform="translate(-12.4 -10.5)"
+            />
+          </svg>
+        </div>
+        <div id="slider-next">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.59 35">
+            <path
+              d="M220.23,25.11,195.71,11a3.34,3.34,0,0,0-5,2.89V42.16a3.34,3.34,0,0,0,5,2.89l24.52-14.16A3.33,3.33,0,0,0,220.23,25.11Z"
+              transform="translate(-190.7 -10.5)"
+            />
+            <path
+              d="M239.63,25.11,215.11,11a3.34,3.34,0,0,0-5,2.89V42.16a3.34,3.34,0,0,0,5,2.89l24.52-14.16A3.34,3.34,0,0,0,239.63,25.11Z"
+              transform="translate(-190.7 -10.5)"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="anime-section">
+        <div class="section-image">
+          <img src="./assets/your-name.jpg" alt="Your Name" />
+        </div>
+        <div class="section-text">
+          <div>
+            <h1>Anime</h1>
+            <p>
+              Aenean eget nulla in arcu faucibus fringilla a ut nibh. Praesent
+              vehicula metus in eros commodo, ut fermentum nisi fermentum.
+              Suspendisse pulvinar arcu sodales fringilla dictum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="manga-section">
+        <div class="section-text">
+          <div>
+            <h1>Manga</h1>
+            <p>
+              Sed dignissim malesuada iaculis. Integer turpis leo, mollis
+              pretium venenatis id, hendrerit in augue. Aliquam est lacus,
+              lobortis in lectus ac, sagittis egestas lacus. In sit amet mauris
+              sodales, faucibus augue quis, rhoncus libero. Etiam in maximus
+              urna, eget consequat sem.
+            </p>
+          </div>
+        </div>
+        <div class="section-image">
+          <img src="./assets/manga.jpg" alt="Manga" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="top-suggestions">
+        <a href="#" class="wide">
+          <img src="./assets/haikyu.jpg" alt="Haikyu" />
+          <div></div>
+          <p>HaiKyu!!</p>
+        </a>
+        <a href="#">
+          <img src="./assets/my-hero-academia.jpg" alt="My Hero Academia" />
+          <div></div>
+          <p>My Hero Academia</p>
+        </a>
+        <a href="#">
+          <img src="./assets/attack-on-titan.jpg" alt="Attack On Titan" />
+          <div></div>
+          <p>Attack On Titan</p>
+        </a>
+        <a href="#">
+          <img src="./assets/fire-force.jpg" alt="Fire Force" />
+          <div></div>
+          <p>Fire Force</p>
+        </a>
+        <a href="#">
+          <img
+            src="./assets/beyond-the-boundary.jpg"
+            alt="Beyond The Boundary"
+          />
+          <div></div>
+          <p>Beyond The Boundary</p>
+        </a>
+        <a href="#" class="wide">
+          <img src="./assets/one-punch-man.jpg" alt="One Punch Man" />
+          <div></div>
+          <p>One Punch Man</p>
+        </a>
+      </div>
+      <div class="media">
+        <p>Designed and developed by m0hammadr3za</p>
+        <div>
+          <a href="#">
+            <img src="./assets/twitter.svg" />
+          </a>
+          <a href="#">
+            <img src="./assets/youtube.svg" />
+          </a>
+          <a href="#">
+            <img src="./assets/facebook.svg" />
+          </a>
+        </div>
+      </div>
+    </footer>
 
-        <script src="./js/index.js"></script>
-    </body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

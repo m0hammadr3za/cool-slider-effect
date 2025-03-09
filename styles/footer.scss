@@ -1,151 +1,151 @@
 @import "./variables";
 
 footer {
-    padding: 1.875rem;
-    margin: 3.75rem 4% 4.75rem 4%;
+  padding: 1.875rem;
+  margin: 3.75rem 4% 4.75rem 4%;
 
-    .top-segustions {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
+  .top-suggestions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
 
-        a {
-            position: relative;
-            width: 100%;
-            height: 400px;
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
+    a {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
-            div,
-            p {
-                position: absolute;
-                transition: opacity 0.3s, transform 0.5s;
-            }
+      div,
+      p {
+        position: absolute;
+        transition: opacity 0.3s, transform 0.5s;
+      }
 
-            div {
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: #000;
-                opacity: 0;
-            }
+      div {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0;
+      }
 
-            p {
-                font-weight: normal;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                color: #fff;
-                padding: 1rem 1.5rem;
-                margin: 0;
-                opacity: 0;
-                transform: translateY(2rem);
-            }
+      p {
+        font-weight: normal;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        margin: 0;
+        opacity: 0;
+        transform: translateY(2rem);
+      }
 
-            &:hover {
-                div {
-                    opacity: 0.5;
-                }
-
-                p {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
+      &:hover {
+        div {
+          opacity: 0.5;
         }
-
-        .wide {
-            grid-column: span 2;
-        }
-    }
-
-    .media {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 2.125rem;
 
         p {
-            color: #757575;
-            margin: 0;
+          opacity: 1;
+          transform: translateY(0);
         }
-
-        div {
-            display: flex;
-
-            a {
-                margin-left: 2.5rem;
-            }
-        }
+      }
     }
+
+    .wide {
+      grid-column: span 2;
+    }
+  }
+
+  .media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.125rem;
+
+    p {
+      color: #757575;
+      margin: 0;
+    }
+
+    div {
+      display: flex;
+
+      a {
+        margin-left: 2.5rem;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-    footer {
-        .top-segustions a {
-            height: 300px;
-        }
-
-        .media {
-            p {
-                font-size: 18px;
-                font-weight: normal;
-            }
-
-            div a img {
-                height: 25px;
-            }
-        }
+  footer {
+    .top-suggestions a {
+      height: 300px;
     }
+
+    .media {
+      p {
+        font-size: 18px;
+        font-weight: normal;
+      }
+
+      div a img {
+        height: 25px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 900px) {
-    footer {
-        padding: 0;
-        margin: 0;
+  footer {
+    padding: 0;
+    margin: 0;
 
-        .top-segustions {
-            grid-template-columns: repeat(2, 1fr);
+    .top-suggestions {
+      grid-template-columns: repeat(2, 1fr);
 
-            a {
-                height: 300px;
-            }
-        }
-
-        .media {
-            padding: 2rem;
-            padding-top: 1rem;
-            padding-bottom: 3.5rem;
-            justify-content: center;
-
-            p {
-                text-align: center;
-                width: 100%;
-                font-size: 1rem;
-                font-weight: normal;
-                margin-bottom: 1rem;
-            }
-
-            div a {
-                margin-left: 1.5rem;
-
-                img {
-                    height: 22px;
-                }
-
-                &:first-child {
-                    margin-left: 0;
-                }
-            }
-        }
+      a {
+        height: 300px;
+      }
     }
+
+    .media {
+      padding: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 3.5rem;
+      justify-content: center;
+
+      p {
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: normal;
+        margin-bottom: 1rem;
+      }
+
+      div a {
+        margin-left: 1.5rem;
+
+        img {
+          height: 22px;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }
